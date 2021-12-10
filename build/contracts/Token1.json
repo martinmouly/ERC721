@@ -13,9 +13,9 @@
       "type": "constructor"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract MyNFT\",\"name\":\"_myNFT\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Token1.sol\":\"Token1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0x24141d2f6b98d4cb77a8936eae8cbaad2e261d9062bdc08036096f4550092501\",\"urls\":[\"bzz-raw://b710eb003944777135f027500a5a57b479fe857849f5f467c1ef9687401e3c95\",\"dweb:/ipfs/QmcELzi6KRzAs3DXwxdsoKWRJ13KSeipKQsJgD3unctdZM\"]},\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xf70bc25d981e4ec9673a995ad2995d5d493ea188d3d8f388bba9c227ce09fb82\",\"urls\":[\"bzz-raw://bd970f51e3a77790c2f02b5b1759827c3b897c3d98c407b3631e8af32e3dc93c\",\"dweb:/ipfs/QmPF85Amgbqjk3SNZKsPCsqCw8JfwYEPMnnhvMJUyX58je\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x118ed7540f56b21ff92e21ebaa73584048e98d2ac04ca67571329bb8dbd9032f\",\"urls\":[\"bzz-raw://da2918b7aff73dd51d41bfcfa548f81eb50531b8353500fdbdacf297076db070\",\"dweb:/ipfs/Qmb8ixAs1vBjZRowQNuNg6bRf2NZmgZ1JTBxmQS14PHpcL\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x2d99a0deb6648c34fbc66d6ac4a2d64798d7a5321b45624f6736fadc63da1962\",\"urls\":[\"bzz-raw://2dcdce5ede1e5e650d174ec0b35be7d47b6a50f30bc895ef0d9e59fb75052e45\",\"dweb:/ipfs/QmQ2XFsDLTYqfEdw7pYzHiGtFRY11yQm4b6ynYgKqDxeB8\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\":{\"keccak256\":\"0xe6bd1b1218338b6f9fe17776f48623b4ac3d8a40405f74a44bc23c00abe2ca13\",\"urls\":[\"bzz-raw://0c354c3f6e9c487759aa7869be4fba68e0b2efc777b514d289c4cbd3ff8f7e1a\",\"dweb:/ipfs/QmdF9LcSYVmiUCL7JxLEYmSLrjga6zJsujfi6sgEJD4M1z\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xccb917776f826ac6b68bd5a15a5f711e3967848a52ba11e6104d9a4f593314a7\",\"urls\":[\"bzz-raw://430255ad2229ced6d880e61a67bdc6e48dbbaed8354a7c1fe918cd8b8714a886\",\"dweb:/ipfs/QmTHY56odzqEpEC6v6tafaWMYY7vmULw25q5XHJLCCAeox\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x52146049d6709c870e8ddcd988b5155cb6c5d640cfcd8978aee52bc1ba2ec4eb\",\"urls\":[\"bzz-raw://ada84513617b7c1b2f890b44503735abaec73a1acd030112a17aac7e6c66a4a1\",\"dweb:/ipfs/QmaiFwdio67iJrfjAdkMac24eJ5sS1qD7CZW6PhUU6KjiK\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea\",\"urls\":[\"bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c\",\"dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"@openzeppelin/contracts/utils/EnumerableMap.sol\":{\"keccak256\":\"0x4b087f06b6670a131a5a14e53b1d2a5ef19c034cc5ec42eeebcf9554325744ad\",\"urls\":[\"bzz-raw://f6a6af5d848334e40db419773f6360601e311ffc21c2e274f730b8c542da99fd\",\"dweb:/ipfs/QmfA24cxQ2g41ZWUuDF295dxDJ4xF1bSDYtC3EaLd7CzW8\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x1562cd9922fbf739edfb979f506809e2743789cbde3177515542161c3d04b164\",\"urls\":[\"bzz-raw://4580d57781513d98870d9738c7d39094336e0a70cdb90d68dad549c6ced466ec\",\"dweb:/ipfs/Qmf9YZzzRFuvMnav9dgmeRUpdYMMECiZX8w25sHWVbA18V\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0xa1e12f97981f1d0964b1c048978606a57127c56c438bab61cdfe269cad859a74\",\"urls\":[\"bzz-raw://5eefac1760f524971e14aa3f3d79515a3d54fd28c1d3bdca0b36127da349b830\",\"dweb:/ipfs/QmUMzkyH3ytJX5gVPizQruNLhkKmuJb3nFqBDad4LPdg5U\"]},\"project:/contracts/MyNFT.sol\":{\"keccak256\":\"0xca445edf92d02db318385e2c747a99567126752dbe6026194276b339244a3159\",\"urls\":[\"bzz-raw://6ec3be3ea64100842bd585f73e333d0a2e07ba028de682a9e7896c2bd9112ea0\",\"dweb:/ipfs/QmUt5kEtHAyccPA7otuqdBW4cgNAmZEXaDpe3i8ZCLUUny\"]},\"project:/contracts/Token1.sol\":{\"keccak256\":\"0x26b8650b695604cc815fcd58b8cad1ce7be36b15f0f7a0c137979997f064cd5a\",\"urls\":[\"bzz-raw://9e72dcfe4c0a3e5b9ed0e3f07aff5b5d62a51447db83367fcde191fa7d5ec14b\",\"dweb:/ipfs/QmQ2Py8M1uGK4iGFZ85P2EkawSmZFrZnj6odtkrCTejUpD\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50604051608d380380608d83398181016040526020811015602f57600080fd5b810190808051906020019092919050505050603f80604e6000396000f3fe6080604052600080fdfea26469706673582212208a821063979a8ffa6df04a88ab0100134e8ead91ebba12946af60014edd6b81c64736f6c63430006020033",
-  "deployedBytecode": "0x6080604052600080fdfea26469706673582212208a821063979a8ffa6df04a88ab0100134e8ead91ebba12946af60014edd6b81c64736f6c63430006020033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract MyNFT\",\"name\":\"_myNFT\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Token1.sol\":\"Token1\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0x24141d2f6b98d4cb77a8936eae8cbaad2e261d9062bdc08036096f4550092501\",\"urls\":[\"bzz-raw://b710eb003944777135f027500a5a57b479fe857849f5f467c1ef9687401e3c95\",\"dweb:/ipfs/QmcELzi6KRzAs3DXwxdsoKWRJ13KSeipKQsJgD3unctdZM\"]},\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xf70bc25d981e4ec9673a995ad2995d5d493ea188d3d8f388bba9c227ce09fb82\",\"urls\":[\"bzz-raw://bd970f51e3a77790c2f02b5b1759827c3b897c3d98c407b3631e8af32e3dc93c\",\"dweb:/ipfs/QmPF85Amgbqjk3SNZKsPCsqCw8JfwYEPMnnhvMJUyX58je\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x118ed7540f56b21ff92e21ebaa73584048e98d2ac04ca67571329bb8dbd9032f\",\"urls\":[\"bzz-raw://da2918b7aff73dd51d41bfcfa548f81eb50531b8353500fdbdacf297076db070\",\"dweb:/ipfs/Qmb8ixAs1vBjZRowQNuNg6bRf2NZmgZ1JTBxmQS14PHpcL\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x2d99a0deb6648c34fbc66d6ac4a2d64798d7a5321b45624f6736fadc63da1962\",\"urls\":[\"bzz-raw://2dcdce5ede1e5e650d174ec0b35be7d47b6a50f30bc895ef0d9e59fb75052e45\",\"dweb:/ipfs/QmQ2XFsDLTYqfEdw7pYzHiGtFRY11yQm4b6ynYgKqDxeB8\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\":{\"keccak256\":\"0xe6bd1b1218338b6f9fe17776f48623b4ac3d8a40405f74a44bc23c00abe2ca13\",\"urls\":[\"bzz-raw://0c354c3f6e9c487759aa7869be4fba68e0b2efc777b514d289c4cbd3ff8f7e1a\",\"dweb:/ipfs/QmdF9LcSYVmiUCL7JxLEYmSLrjga6zJsujfi6sgEJD4M1z\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xccb917776f826ac6b68bd5a15a5f711e3967848a52ba11e6104d9a4f593314a7\",\"urls\":[\"bzz-raw://430255ad2229ced6d880e61a67bdc6e48dbbaed8354a7c1fe918cd8b8714a886\",\"dweb:/ipfs/QmTHY56odzqEpEC6v6tafaWMYY7vmULw25q5XHJLCCAeox\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x52146049d6709c870e8ddcd988b5155cb6c5d640cfcd8978aee52bc1ba2ec4eb\",\"urls\":[\"bzz-raw://ada84513617b7c1b2f890b44503735abaec73a1acd030112a17aac7e6c66a4a1\",\"dweb:/ipfs/QmaiFwdio67iJrfjAdkMac24eJ5sS1qD7CZW6PhUU6KjiK\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea\",\"urls\":[\"bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c\",\"dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"@openzeppelin/contracts/utils/EnumerableMap.sol\":{\"keccak256\":\"0x4b087f06b6670a131a5a14e53b1d2a5ef19c034cc5ec42eeebcf9554325744ad\",\"urls\":[\"bzz-raw://f6a6af5d848334e40db419773f6360601e311ffc21c2e274f730b8c542da99fd\",\"dweb:/ipfs/QmfA24cxQ2g41ZWUuDF295dxDJ4xF1bSDYtC3EaLd7CzW8\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x1562cd9922fbf739edfb979f506809e2743789cbde3177515542161c3d04b164\",\"urls\":[\"bzz-raw://4580d57781513d98870d9738c7d39094336e0a70cdb90d68dad549c6ced466ec\",\"dweb:/ipfs/Qmf9YZzzRFuvMnav9dgmeRUpdYMMECiZX8w25sHWVbA18V\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0xa1e12f97981f1d0964b1c048978606a57127c56c438bab61cdfe269cad859a74\",\"urls\":[\"bzz-raw://5eefac1760f524971e14aa3f3d79515a3d54fd28c1d3bdca0b36127da349b830\",\"dweb:/ipfs/QmUMzkyH3ytJX5gVPizQruNLhkKmuJb3nFqBDad4LPdg5U\"]},\"project:/contracts/MyNFT.sol\":{\"keccak256\":\"0xf4ea28508d97d325074a20c3d3824e4ae19a54707ff33ce83e93ca2993f5ab6f\",\"urls\":[\"bzz-raw://6ca44dbfaffb4c725b490792b80f775e748d0d9c2c558af769ea726c7cde2ca7\",\"dweb:/ipfs/QmW76VVd1nXe3ZhzNRxWF4qSGPZs8LJfDEjJehTELKgu2X\"]},\"project:/contracts/Token1.sol\":{\"keccak256\":\"0x26b8650b695604cc815fcd58b8cad1ce7be36b15f0f7a0c137979997f064cd5a\",\"urls\":[\"bzz-raw://9e72dcfe4c0a3e5b9ed0e3f07aff5b5d62a51447db83367fcde191fa7d5ec14b\",\"dweb:/ipfs/QmQ2Py8M1uGK4iGFZ85P2EkawSmZFrZnj6odtkrCTejUpD\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50604051608d380380608d83398181016040526020811015602f57600080fd5b810190808051906020019092919050505050603f80604e6000396000f3fe6080604052600080fdfea2646970667358221220dfb87a3481c7bb669517ccb55010bd09c22043181db7636282beaedb006c25e664736f6c63430006020033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220dfb87a3481c7bb669517ccb55010bd09c22043181db7636282beaedb006c25e664736f6c63430006020033",
   "sourceMap": "50:379:14:-:0;;;79:347;8:9:-1;5:2;;;30:1;27;20:12;5:2;79:347:14;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;79:347:14;;;;;;;;;;;;;;;;;50:379;;;;;;",
   "deployedSourceMap": "50:379:14:-:0;;;;;",
   "source": "pragma solidity ^0.6.0;\r\nimport \"./MyNFT.sol\";\r\n\r\ncontract Token1 {\r\n    \r\n    constructor(MyNFT _myNFT) public{\r\n        //uint tokenId = _myNFT.declareAnimal(0,3,true,\"-VuS0pKOImWr7Bj\");\r\n        //_myNFT.mintAnimal(address(0xa0b9f62A0dC5cCc21cfB71BA70070C3E1C66510E),1);\r\n        //_myNFT.mintAnimal(address(0xa0b9f62A0dC5cCc21cfB71BA70070C3E1C66510E),tokenId);\r\n        //_myNFT.offerForReproduction(0,0.001 ether);\r\n    }\r\n}",
@@ -24,14 +24,14 @@
     "absolutePath": "project:/contracts/Token1.sol",
     "exportedSymbols": {
       "Token1": [
-        3446
+        3508
       ]
     },
-    "id": 3447,
+    "id": 3509,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3438,
+        "id": 3500,
         "literals": [
           "solidity",
           "^",
@@ -44,10 +44,10 @@
       {
         "absolutePath": "project:/contracts/MyNFT.sol",
         "file": "./MyNFT.sol",
-        "id": 3439,
+        "id": 3501,
         "nodeType": "ImportDirective",
-        "scope": 3447,
-        "sourceUnit": 3437,
+        "scope": 3509,
+        "sourceUnit": 3499,
         "src": "25:21:14",
         "symbolAliases": [],
         "unitAlias": ""
@@ -59,22 +59,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3446,
+        "id": 3508,
         "linearizedBaseContracts": [
-          3446
+          3508
         ],
         "name": "Token1",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 3444,
+              "id": 3506,
               "nodeType": "Block",
               "src": "111:315:14",
               "statements": []
             },
             "documentation": null,
-            "id": 3445,
+            "id": 3507,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -82,32 +82,32 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 3442,
+              "id": 3504,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3441,
+                  "id": 3503,
                   "name": "_myNFT",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 3445,
+                  "scope": 3507,
                   "src": "91:12:14",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_MyNFT_$3436",
+                    "typeIdentifier": "t_contract$_MyNFT_$3498",
                     "typeString": "contract MyNFT"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 3440,
+                    "id": 3502,
                     "name": "MyNFT",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 3436,
+                    "referencedDeclaration": 3498,
                     "src": "91:5:14",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_MyNFT_$3436",
+                      "typeIdentifier": "t_contract$_MyNFT_$3498",
                       "typeString": "contract MyNFT"
                     }
                   },
@@ -118,19 +118,19 @@
               "src": "90:14:14"
             },
             "returnParameters": {
-              "id": 3443,
+              "id": 3505,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "111:0:14"
             },
-            "scope": 3446,
+            "scope": 3508,
             "src": "79:347:14",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 3447,
+        "scope": 3509,
         "src": "50:379:14"
       }
     ],
@@ -141,7 +141,7 @@
       "absolutePath": "project:/contracts/Token1.sol",
       "exportedSymbols": {
         "Token1": [
-          3446
+          3508
         ]
       }
     },
@@ -155,22 +155,22 @@
             ".0"
           ]
         },
-        "id": 3438,
+        "id": 3500,
         "name": "PragmaDirective",
         "src": "0:23:14"
       },
       {
         "attributes": {
-          "SourceUnit": 3437,
+          "SourceUnit": 3499,
           "absolutePath": "project:/contracts/MyNFT.sol",
           "file": "./MyNFT.sol",
-          "scope": 3447,
+          "scope": 3509,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 3439,
+        "id": 3501,
         "name": "ImportDirective",
         "src": "25:21:14"
       },
@@ -187,10 +187,10 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            3446
+            3508
           ],
           "name": "Token1",
-          "scope": 3447
+          "scope": 3509
         },
         "children": [
           {
@@ -204,7 +204,7 @@
               ],
               "name": "",
               "overrides": null,
-              "scope": 3446,
+              "scope": 3508,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -217,7 +217,7 @@
                       "constant": false,
                       "name": "_myNFT",
                       "overrides": null,
-                      "scope": 3445,
+                      "scope": 3507,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "contract MyNFT",
@@ -229,20 +229,20 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "MyNFT",
-                          "referencedDeclaration": 3436,
+                          "referencedDeclaration": 3498,
                           "type": "contract MyNFT"
                         },
-                        "id": 3440,
+                        "id": 3502,
                         "name": "UserDefinedTypeName",
                         "src": "91:5:14"
                       }
                     ],
-                    "id": 3441,
+                    "id": 3503,
                     "name": "VariableDeclaration",
                     "src": "91:12:14"
                   }
                 ],
-                "id": 3442,
+                "id": 3504,
                 "name": "ParameterList",
                 "src": "90:14:14"
               },
@@ -253,7 +253,7 @@
                   ]
                 },
                 "children": [],
-                "id": 3443,
+                "id": 3505,
                 "name": "ParameterList",
                 "src": "111:0:14"
               },
@@ -264,22 +264,22 @@
                   ]
                 },
                 "children": [],
-                "id": 3444,
+                "id": 3506,
                 "name": "Block",
                 "src": "111:315:14"
               }
             ],
-            "id": 3445,
+            "id": 3507,
             "name": "FunctionDefinition",
             "src": "79:347:14"
           }
         ],
-        "id": 3446,
+        "id": 3508,
         "name": "ContractDefinition",
         "src": "50:379:14"
       }
     ],
-    "id": 3447,
+    "id": 3509,
     "name": "SourceUnit",
     "src": "0:429:14"
   },
@@ -296,7 +296,7 @@
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-08T00:18:24.032Z",
+  "updatedAt": "2021-12-09T23:55:49.385Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

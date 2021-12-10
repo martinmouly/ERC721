@@ -15,6 +15,7 @@ contract MyNFT is ERC721
 		uint parent2;
 		bool isRep;
 		uint repPrice;
+		address authorizedBreeder;
 	}
 	
 	Animal[] public animals;
@@ -22,26 +23,22 @@ contract MyNFT is ERC721
 
 	constructor() ERC721("Martinooo","MLY") public{
 		breeders.push(0x7bC0F471b287da69f0fb1bCF2218Fab947BBe0e9); //adding my address to the list of breeders
-		breeders.push(0x4f82f7A130821F61931C7675A40fab723b70d1B8); //adding my address to the list of breeders
-		_mint(address(0x7bC0F471b287da69f0fb1bCF2218Fab947BBe0e9),0);
-		_mint(address(0x4f82f7A130821F61931C7675A40fab723b70d1B8),1);
-		_mint(address(0x7bC0F471b287da69f0fb1bCF2218Fab947BBe0e9),2);
-		//animals.push(Animal(0, 2, false, "animal0",false,0));
-		animals.push(Animal(1, 3, true, "parent1",false,0,1000,1000,false,0));
-		animals.push(Animal(1, 3, true, "parent2",false,0,1000,1000,false,0));
-		animals.push(Animal(1, 3, true, "parent2",false,0,1000,1000,true,0.001 ether));
+		//breeders.push(0x4f82f7A130821F61931C7675A40fab723b70d1B8); //adding the evaluator to the list of breeders
 	}
 	
 
 	function declareAnimal(uint sex, uint legs, bool wings, string calldata name) external returns (uint256){
-			animals.push(Animal(sex, legs, wings, name,false,0,1000,1000,false,0));
+			animals.push(Animal(sex, legs, wings, name,false,0,1000 ether,1000 ether,false,0,address(0)));
 			uint animalId=animals.length-1;
 			_mint(msg.sender,animalId);
 			return animalId;
 	}
 
 	function declareAnimalWithParents(uint sex, uint legs, bool wings, string calldata name, uint parent1, uint parent2) external returns (uint256){
-			animals.push(Animal(sex, legs, wings, name,false,0,parent1,parent2,false,0));
+			require(canReproduce(parent1));
+			require(canReproduce(parent2));
+			animals[parent2].authorizedBreeder=address(0);
+			animals.push(Animal(sex, legs, wings, name,false,0,parent1,parent2,false,0,address(0)));
 			uint animalId=animals.length-1;
 			_mint(msg.sender,animalId);
 			return animalId;
@@ -87,20 +84,15 @@ contract MyNFT is ERC721
 	}
 
 	function tokenOfOwnerByIndex(address owner, uint256 index) public override view returns (uint256){
-		/*uint256 tokenId=1000;
+		uint256 tokenId;
 		for (uint i=0; i < animals.length; i++) {
     		if (owner == ownerOf(i)) {
         		tokenId=i;
     		}
 		}
-		return tokenId;*/
+		return tokenId;
 		uint256 toReturn;
-		if (owner==address(0x4f82f7A130821F61931C7675A40fab723b70d1B8)){
-			toReturn=1;
-		} else {
-			toReturn=0;
-		}
-		return toReturn;
+		
 	}
 
 	function isAnimalForSale(uint animalNumber) external view returns (bool){
@@ -113,7 +105,6 @@ contract MyNFT is ERC721
 
 	function buyAnimal(uint animalNumber) external payable{
 		require(animals[animalNumber].isForSale==true);
-		//require(animals[animalNumber].price==msg.value);
 		_transfer(ownerOf(animalNumber),msg.sender,animalNumber);
 	}
 
@@ -130,9 +121,20 @@ contract MyNFT is ERC721
 		return animals[animalNumber].repPrice;
 	}
 
-	function offerForReproduction(uint animalNumber,uint256 price) public {
-		require(ownerOf(animalNumber)==address(0x4f82f7A130821F61931C7675A40fab723b70d1B8));
+	function offerForReproduction(uint animalNumber,uint price) external returns (bool){
+		bool test=false;
+		require(ownerOf(animalNumber)==msg.sender);
 		animals[animalNumber].isRep=true;
 		animals[animalNumber].repPrice=price;
+		test=true;
+		return test;
+	}
+
+	function authorizedBreederToReproduce(uint animalNumber) public view returns(address){
+		return animals[animalNumber].authorizedBreeder;
+	}
+
+	function payForReproduction(uint animalNumber) external payable {
+		animals[animalNumber].authorizedBreeder=msg.sender;
 	}
 }

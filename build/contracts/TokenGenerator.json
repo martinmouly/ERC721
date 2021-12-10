@@ -1,0 +1,1004 @@
+{
+  "contractName": "TokenGenerator",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract MyNFT",
+          "name": "_myNFT",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract MyNFT\",\"name\":\"_myNFT\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/TokenGenerator.sol\":\"TokenGenerator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0x24141d2f6b98d4cb77a8936eae8cbaad2e261d9062bdc08036096f4550092501\",\"urls\":[\"bzz-raw://b710eb003944777135f027500a5a57b479fe857849f5f467c1ef9687401e3c95\",\"dweb:/ipfs/QmcELzi6KRzAs3DXwxdsoKWRJ13KSeipKQsJgD3unctdZM\"]},\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xf70bc25d981e4ec9673a995ad2995d5d493ea188d3d8f388bba9c227ce09fb82\",\"urls\":[\"bzz-raw://bd970f51e3a77790c2f02b5b1759827c3b897c3d98c407b3631e8af32e3dc93c\",\"dweb:/ipfs/QmPF85Amgbqjk3SNZKsPCsqCw8JfwYEPMnnhvMJUyX58je\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x118ed7540f56b21ff92e21ebaa73584048e98d2ac04ca67571329bb8dbd9032f\",\"urls\":[\"bzz-raw://da2918b7aff73dd51d41bfcfa548f81eb50531b8353500fdbdacf297076db070\",\"dweb:/ipfs/Qmb8ixAs1vBjZRowQNuNg6bRf2NZmgZ1JTBxmQS14PHpcL\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x2d99a0deb6648c34fbc66d6ac4a2d64798d7a5321b45624f6736fadc63da1962\",\"urls\":[\"bzz-raw://2dcdce5ede1e5e650d174ec0b35be7d47b6a50f30bc895ef0d9e59fb75052e45\",\"dweb:/ipfs/QmQ2XFsDLTYqfEdw7pYzHiGtFRY11yQm4b6ynYgKqDxeB8\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\":{\"keccak256\":\"0xe6bd1b1218338b6f9fe17776f48623b4ac3d8a40405f74a44bc23c00abe2ca13\",\"urls\":[\"bzz-raw://0c354c3f6e9c487759aa7869be4fba68e0b2efc777b514d289c4cbd3ff8f7e1a\",\"dweb:/ipfs/QmdF9LcSYVmiUCL7JxLEYmSLrjga6zJsujfi6sgEJD4M1z\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xccb917776f826ac6b68bd5a15a5f711e3967848a52ba11e6104d9a4f593314a7\",\"urls\":[\"bzz-raw://430255ad2229ced6d880e61a67bdc6e48dbbaed8354a7c1fe918cd8b8714a886\",\"dweb:/ipfs/QmTHY56odzqEpEC6v6tafaWMYY7vmULw25q5XHJLCCAeox\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x52146049d6709c870e8ddcd988b5155cb6c5d640cfcd8978aee52bc1ba2ec4eb\",\"urls\":[\"bzz-raw://ada84513617b7c1b2f890b44503735abaec73a1acd030112a17aac7e6c66a4a1\",\"dweb:/ipfs/QmaiFwdio67iJrfjAdkMac24eJ5sS1qD7CZW6PhUU6KjiK\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea\",\"urls\":[\"bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c\",\"dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"@openzeppelin/contracts/utils/EnumerableMap.sol\":{\"keccak256\":\"0x4b087f06b6670a131a5a14e53b1d2a5ef19c034cc5ec42eeebcf9554325744ad\",\"urls\":[\"bzz-raw://f6a6af5d848334e40db419773f6360601e311ffc21c2e274f730b8c542da99fd\",\"dweb:/ipfs/QmfA24cxQ2g41ZWUuDF295dxDJ4xF1bSDYtC3EaLd7CzW8\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x1562cd9922fbf739edfb979f506809e2743789cbde3177515542161c3d04b164\",\"urls\":[\"bzz-raw://4580d57781513d98870d9738c7d39094336e0a70cdb90d68dad549c6ced466ec\",\"dweb:/ipfs/Qmf9YZzzRFuvMnav9dgmeRUpdYMMECiZX8w25sHWVbA18V\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0xa1e12f97981f1d0964b1c048978606a57127c56c438bab61cdfe269cad859a74\",\"urls\":[\"bzz-raw://5eefac1760f524971e14aa3f3d79515a3d54fd28c1d3bdca0b36127da349b830\",\"dweb:/ipfs/QmUMzkyH3ytJX5gVPizQruNLhkKmuJb3nFqBDad4LPdg5U\"]},\"project:/contracts/MyNFT.sol\":{\"keccak256\":\"0xef5cb544ffcf2a94a762ce3ec51700ec6d2d68a0daa8f77206fef3c44e511fd3\",\"urls\":[\"bzz-raw://6b049528f1cf40053c1e5219f489b4845ebb08bff3334db22fbeb7f800174fc2\",\"dweb:/ipfs/QmcNwZnGhDdHrLVPsUKHoq2BozxNh6GcTEj2yytWYEzeBC\"]},\"project:/contracts/TokenGenerator.sol\":{\"keccak256\":\"0x6e7aca9f507e81bed3ccf831275cee3c85b21811001d9dcaf942f112ab416095\",\"urls\":[\"bzz-raw://4ae9c80426e1166d544b26e392c1ab02e864919b74d02b4f8e0651595f89f316\",\"dweb:/ipfs/QmdBi4JK7fGHUAhNXcNDGQxmLoFjauYQTSbyPmYf87ADzh\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516102583803806102588339818101604052602081101561003357600080fd5b810190808051906020019092919050505060008173ffffffffffffffffffffffffffffffffffffffff166332b0f3766000600360016040518463ffffffff1660e01b81526004018084815260200183815260200182151515158152602001806020018281038252600f8152602001807f2d56755330704b4f496d577237426a0000000000000000000000000000000000815250602001945050505050602060405180830381600087803b1580156100e957600080fd5b505af11580156100fd573d6000803e3d6000fd5b505050506040513d602081101561011357600080fd5b8101908080519060200190929190505050905060008273ffffffffffffffffffffffffffffffffffffffff166332b0f3766001600260016040518463ffffffff1660e01b8152600401808481526020018381526020018215151515815260200180602001828103825260128152602001807f616e696d616c2074726f70207374796cc3a90000000000000000000000000000815250602001945050505050602060405180830381600087803b1580156101cb57600080fd5b505af11580156101df573d6000803e3d6000fd5b505050506040513d60208110156101f557600080fd5b81019080805190602001909291905050509050505050603f806102196000396000f3fe6080604052600080fdfea264697066735822122079915370f481fc221563b89b0c02755a25be429bf3f7a61fe4a6390401f97c4c64736f6c63430006020033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122079915370f481fc221563b89b0c02755a25be429bf3f7a61fe4a6390401f97c4c64736f6c63430006020033",
+  "sourceMap": "50:232:14:-:0;;;87:192;8:9:-1;5:2;;;30:1;27;20:12;5:2;87:192:14;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;87:192:14;;;;;;;;;;;;;;;;130:12;145:6;:20;;;166:1;168;170:4;145:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;145:48:14;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;145:48:14;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;145:48:14;;;;;;;;;;;;;;;;130:63;;204:13;220:6;:20;;;241:1;243;245:4;220:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;220:51:14;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;220:51:14;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;220:51:14;;;;;;;;;;;;;;;;204:67;;87:192;;;50:232;;;;;;",
+  "deployedSourceMap": "50:232:14:-:0;;;;;",
+  "source": "pragma solidity ^0.6.0;\r\nimport \"./MyNFT.sol\";\r\n\r\ncontract TokenGenerator {\r\n    \r\n    constructor(MyNFT _myNFT) public{\r\n        uint tokenId = _myNFT.declareAnimal(0,3,true,\"-VuS0pKOImWr7Bj\");\r\n        uint tokenId2 = _myNFT.declareAnimal(1,2,true,\"animal trop stylé\");\r\n    }\r\n}",
+  "sourcePath": "C:\\Users\\Martin\\ERC721-main\\ERC721-main\\contracts\\TokenGenerator.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/TokenGenerator.sol",
+    "exportedSymbols": {
+      "TokenGenerator": [
+        3464
+      ]
+    },
+    "id": 3465,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3436,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:14"
+      },
+      {
+        "absolutePath": "project:/contracts/MyNFT.sol",
+        "file": "./MyNFT.sol",
+        "id": 3437,
+        "nodeType": "ImportDirective",
+        "scope": 3465,
+        "sourceUnit": 3435,
+        "src": "25:21:14",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3464,
+        "linearizedBaseContracts": [
+          3464
+        ],
+        "name": "TokenGenerator",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 3462,
+              "nodeType": "Block",
+              "src": "119:160:14",
+              "statements": [
+                {
+                  "assignments": [
+                    3443
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 3443,
+                      "name": "tokenId",
+                      "nodeType": "VariableDeclaration",
+                      "overrides": null,
+                      "scope": 3462,
+                      "src": "130:12:14",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 3442,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "130:4:14",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 3451,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 3446,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "166:1:14",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "33",
+                        "id": 3447,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "168:1:14",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_3_by_1",
+                          "typeString": "int_const 3"
+                        },
+                        "value": "3"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "74727565",
+                        "id": 3448,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "170:4:14",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "true"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "2d56755330704b4f496d577237426a",
+                        "id": 3449,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "175:17:14",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_19b3e544aca0f47ac6e26020994d5e4a6b25f99a955f8010aed17f119475b1ec",
+                          "typeString": "literal_string \"-VuS0pKOImWr7Bj\""
+                        },
+                        "value": "-VuS0pKOImWr7Bj"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_3_by_1",
+                          "typeString": "int_const 3"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_19b3e544aca0f47ac6e26020994d5e4a6b25f99a955f8010aed17f119475b1ec",
+                          "typeString": "literal_string \"-VuS0pKOImWr7Bj\""
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3444,
+                        "name": "_myNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3439,
+                        "src": "145:6:14",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_MyNFT_$3434",
+                          "typeString": "contract MyNFT"
+                        }
+                      },
+                      "id": 3445,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "declareAnimal",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2990,
+                      "src": "145:20:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_string_memory_ptr_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,uint256,bool,string memory) external returns (uint256)"
+                      }
+                    },
+                    "id": 3450,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "145:48:14",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "130:63:14"
+                },
+                {
+                  "assignments": [
+                    3453
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 3453,
+                      "name": "tokenId2",
+                      "nodeType": "VariableDeclaration",
+                      "overrides": null,
+                      "scope": 3462,
+                      "src": "204:13:14",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 3452,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "204:4:14",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 3461,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "31",
+                        "id": 3456,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "241:1:14",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "32",
+                        "id": 3457,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "243:1:14",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        "value": "2"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "74727565",
+                        "id": 3458,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "245:4:14",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "true"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "616e696d616c2074726f70207374796cc3a9",
+                        "id": 3459,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "250:20:14",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_79406aaae99459a501d9e73a9d1517449d80eb3dc97c85b3787e7d348cee94a6",
+                          "typeString": "literal_string \"animal trop stylé\""
+                        },
+                        "value": "animal trop stylé"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_2_by_1",
+                          "typeString": "int_const 2"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_79406aaae99459a501d9e73a9d1517449d80eb3dc97c85b3787e7d348cee94a6",
+                          "typeString": "literal_string \"animal trop stylé\""
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 3454,
+                        "name": "_myNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3439,
+                        "src": "220:6:14",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_MyNFT_$3434",
+                          "typeString": "contract MyNFT"
+                        }
+                      },
+                      "id": 3455,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "declareAnimal",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 2990,
+                      "src": "220:20:14",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_uint256_$_t_bool_$_t_string_memory_ptr_$returns$_t_uint256_$",
+                        "typeString": "function (uint256,uint256,bool,string memory) external returns (uint256)"
+                      }
+                    },
+                    "id": 3460,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "220:51:14",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "204:67:14"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 3463,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 3440,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3439,
+                  "name": "_myNFT",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 3463,
+                  "src": "99:12:14",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_MyNFT_$3434",
+                    "typeString": "contract MyNFT"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 3438,
+                    "name": "MyNFT",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 3434,
+                    "src": "99:5:14",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MyNFT_$3434",
+                      "typeString": "contract MyNFT"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "98:14:14"
+            },
+            "returnParameters": {
+              "id": 3441,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "119:0:14"
+            },
+            "scope": 3464,
+            "src": "87:192:14",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3465,
+        "src": "50:232:14"
+      }
+    ],
+    "src": "0:282:14"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/TokenGenerator.sol",
+      "exportedSymbols": {
+        "TokenGenerator": [
+          3464
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 3436,
+        "name": "PragmaDirective",
+        "src": "0:23:14"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 3435,
+          "absolutePath": "project:/contracts/MyNFT.sol",
+          "file": "./MyNFT.sol",
+          "scope": 3465,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 3437,
+        "name": "ImportDirective",
+        "src": "25:21:14"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            3464
+          ],
+          "name": "TokenGenerator",
+          "scope": 3465
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 3464,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_myNFT",
+                      "overrides": null,
+                      "scope": 3463,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract MyNFT",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "MyNFT",
+                          "referencedDeclaration": 3434,
+                          "type": "contract MyNFT"
+                        },
+                        "id": 3438,
+                        "name": "UserDefinedTypeName",
+                        "src": "99:5:14"
+                      }
+                    ],
+                    "id": 3439,
+                    "name": "VariableDeclaration",
+                    "src": "99:12:14"
+                  }
+                ],
+                "id": 3440,
+                "name": "ParameterList",
+                "src": "98:14:14"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3441,
+                "name": "ParameterList",
+                "src": "119:0:14"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        3443
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "tokenId",
+                          "overrides": null,
+                          "scope": 3462,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint",
+                              "type": "uint256"
+                            },
+                            "id": 3442,
+                            "name": "ElementaryTypeName",
+                            "src": "130:4:14"
+                          }
+                        ],
+                        "id": 3443,
+                        "name": "VariableDeclaration",
+                        "src": "130:12:14"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_rational_0_by_1",
+                                  "typeString": "int_const 0"
+                                },
+                                {
+                                  "typeIdentifier": "t_rational_3_by_1",
+                                  "typeString": "int_const 3"
+                                },
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_19b3e544aca0f47ac6e26020994d5e4a6b25f99a955f8010aed17f119475b1ec",
+                                  "typeString": "literal_string \"-VuS0pKOImWr7Bj\""
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "declareAnimal",
+                              "referencedDeclaration": 2990,
+                              "type": "function (uint256,uint256,bool,string memory) external returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3439,
+                                  "type": "contract MyNFT",
+                                  "value": "_myNFT"
+                                },
+                                "id": 3444,
+                                "name": "Identifier",
+                                "src": "145:6:14"
+                              }
+                            ],
+                            "id": 3445,
+                            "name": "MemberAccess",
+                            "src": "145:20:14"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 3446,
+                            "name": "Literal",
+                            "src": "166:1:14"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "33",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 3",
+                              "value": "3"
+                            },
+                            "id": 3447,
+                            "name": "Literal",
+                            "src": "168:1:14"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 3448,
+                            "name": "Literal",
+                            "src": "170:4:14"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "2d56755330704b4f496d577237426a",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"-VuS0pKOImWr7Bj\"",
+                              "value": "-VuS0pKOImWr7Bj"
+                            },
+                            "id": 3449,
+                            "name": "Literal",
+                            "src": "175:17:14"
+                          }
+                        ],
+                        "id": 3450,
+                        "name": "FunctionCall",
+                        "src": "145:48:14"
+                      }
+                    ],
+                    "id": 3451,
+                    "name": "VariableDeclarationStatement",
+                    "src": "130:63:14"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        3453
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "tokenId2",
+                          "overrides": null,
+                          "scope": 3462,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint",
+                              "type": "uint256"
+                            },
+                            "id": 3452,
+                            "name": "ElementaryTypeName",
+                            "src": "204:4:14"
+                          }
+                        ],
+                        "id": 3453,
+                        "name": "VariableDeclaration",
+                        "src": "204:13:14"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_rational_1_by_1",
+                                  "typeString": "int_const 1"
+                                },
+                                {
+                                  "typeIdentifier": "t_rational_2_by_1",
+                                  "typeString": "int_const 2"
+                                },
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_79406aaae99459a501d9e73a9d1517449d80eb3dc97c85b3787e7d348cee94a6",
+                                  "typeString": "literal_string \"animal trop stylé\""
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "declareAnimal",
+                              "referencedDeclaration": 2990,
+                              "type": "function (uint256,uint256,bool,string memory) external returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 3439,
+                                  "type": "contract MyNFT",
+                                  "value": "_myNFT"
+                                },
+                                "id": 3454,
+                                "name": "Identifier",
+                                "src": "220:6:14"
+                              }
+                            ],
+                            "id": 3455,
+                            "name": "MemberAccess",
+                            "src": "220:20:14"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "31",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1",
+                              "value": "1"
+                            },
+                            "id": 3456,
+                            "name": "Literal",
+                            "src": "241:1:14"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "32",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 2",
+                              "value": "2"
+                            },
+                            "id": 3457,
+                            "name": "Literal",
+                            "src": "243:1:14"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "74727565",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "bool",
+                              "type": "bool",
+                              "value": "true"
+                            },
+                            "id": 3458,
+                            "name": "Literal",
+                            "src": "245:4:14"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "616e696d616c2074726f70207374796cc3a9",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"animal trop stylé\"",
+                              "value": "animal trop stylé"
+                            },
+                            "id": 3459,
+                            "name": "Literal",
+                            "src": "250:20:14"
+                          }
+                        ],
+                        "id": 3460,
+                        "name": "FunctionCall",
+                        "src": "220:51:14"
+                      }
+                    ],
+                    "id": 3461,
+                    "name": "VariableDeclarationStatement",
+                    "src": "204:67:14"
+                  }
+                ],
+                "id": 3462,
+                "name": "Block",
+                "src": "119:160:14"
+              }
+            ],
+            "id": 3463,
+            "name": "FunctionDefinition",
+            "src": "87:192:14"
+          }
+        ],
+        "id": 3464,
+        "name": "ContractDefinition",
+        "src": "50:232:14"
+      }
+    ],
+    "id": 3465,
+    "name": "SourceUnit",
+    "src": "0:282:14"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
+  },
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0x915B9Fdf06731D1De4D3Acf1F3443be384a726b0",
+      "transactionHash": "0xf6aee6d7799d36e04364687bda905f54dd46c6da26e820b2ffad52405f375516"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-12-10T00:11:50.970Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
